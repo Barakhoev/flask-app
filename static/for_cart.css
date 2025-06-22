@@ -1,0 +1,104 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Стили для списка товаров */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+strong {
+    color: #2c3e50;
+}
+
+/* Стили для итоговой суммы */
+p {
+    font-size: 1.2em;
+    text-align: right;
+    margin: 20px 0;
+    padding: 15px;
+    background: #e8f4fc;
+    border-radius: 5px;
+}
+
+p strong {
+    color: #3498db;
+}
+
+/* Стили для пустой корзины */
+p:empty {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Стили для ссылки */
+a {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+a:hover {
+    background: #2980b9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    li strong {
+        margin-bottom: 5px;
+    }
+}
